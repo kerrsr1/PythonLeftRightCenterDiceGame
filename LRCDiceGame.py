@@ -1,7 +1,6 @@
 # LRCDiceGame.py
 #
 # Created by Sarah Kerr for CS499
-# July 17, 2022
 # Created on PyCharm Community 2021.2.1, Python version 3.9
 #
 # Console-based dice rolling game using playing chips that players pass left and right,
@@ -61,10 +60,10 @@ class CenterPot:
 def main():
     """ Game setup here, then begin game loop. """
     display_rules()
-    players = enter_num_of_players()  # Asks user for how many players. Limit 3 - 20
+    players = enter_num_of_players()
     list_of_players = create_player_list(players)
 
-    total_chips = total_chips_in_play(players)  # This will keep track of the total chips in play
+    total_chips = total_chips_in_play(players) # This will keep track of total chips in play
 
     center_pot = CenterPot(0)  # Initialize center pot to hold discarded chips, start at 0
 
